@@ -1,0 +1,13 @@
+addition
+subtraction
+multiplication
+division
+BODMAS
+rational numbers
+irrational numbers
+squares
+roots
+eponentials
+logs
+trignometry
+calculus
