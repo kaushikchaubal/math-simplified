@@ -40,6 +40,7 @@
       description: "This course goes through the basic concepts of arthimatic",
       topics: "addition, subtraction, multiplication, division",
       level: "Basic",
+      url: "#/arthimatic",
       reviews: [{
         stars: 5,
         body: "I love this course!",
@@ -56,6 +57,7 @@
       description: "Equations can be fun to solve - lets do some fun euqations!",
       topics: "Everything you want about equations!",
       level: "Intermediate",
+      url: "#/construction",
       reviews: [{
         stars: 3,
         body: "I think this course was just OK, could honestly use more hands-on experience",
@@ -72,6 +74,7 @@
       description: "This topic covers the fundmantels of Trignometry",
       topics: "Some triangles related thing!",
       level: "Advanced",
+      url: "#/construction",
       reviews: [{
         stars: 1,
         body: "This course is WAY too in-depth for its rarity value.",

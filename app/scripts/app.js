@@ -36,6 +36,12 @@ angular
       .when('/contact', {
         templateUrl: 'app/views/construction.html'
       })
+      .when('/arthimatic', {
+        templateUrl: 'app/views/arthimatic.html'
+      })
+      .when('/construction', {
+        templateUrl: 'app/views/construction.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
