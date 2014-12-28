@@ -1,11 +1,10 @@
 <div class="list-group" ng-controller="StoreController as store">
     <!--  Product Container  -->
     <div class="list-group-item" ng-repeat="product in products">
-        <h3>{{product.name}} ({{ product.level }}) 
-          <em class="pull-right">
-            <a ng-href="{{ product.url }}">Start Course</a>
-          </em>
-        </h3>
+        <div>
+            <h4>{{product.name}} ({{ product.level }})
+            <a ng-href="{{ product.url }}" class="pull-right">Start Course</a></h4> 
+        </div>
 
         <!-- Product Tabs  -->
         <section ng-controller="TabController as tab">
@@ -23,40 +22,46 @@
 
             <!--  Description Tab's Content  -->
             <div ng-show="tab.isSet(1)">
-                <h4>Description</h4>
-                <blockquote>{{product.description}}</blockquote>
+                <div class="learn-div">
+                    {{product.description}}
+                </div>
             </div>
 
             <!--  Spec Tab's Content  -->
             <div ng-show="tab.isSet(2)">
-                <h4>Content</h4>
-                <blockquote> {{product.topics}}</blockquote>
+                <div class="learn-div">
+                    {{product.topics}}
+                </div>
+
             </div>
 
             <!--  Review Tab's Content  -->
             <div ng-show="tab.isSet(3)">
                 <!--  Product Reviews List -->
-                <ul>
-                    <h4>Reviews</h4>
-                    <li ng-repeat="review in product.reviews">
-                        <blockquote>
-                            <strong>{{review.stars}} Stars</strong> {{review.body}}
-                            <cite class="clearfix">—{{review.author}}</cite>
-                        </blockquote>
-                    </li>
-                </ul>
-
+                <div class="learn-div">
+                    <ul>
+                        <li ng-repeat="review in product.reviews">
+                            <blockquote>
+                                {{review.body}}
+                                <strong class="pull-right">{{review.stars}} Stars</strong>
+                                <cite class="clearfix">—{{review.author}}</cite>
+                            </blockquote>
+                        </li>
+                    </ul>
+                </div>
+                
                 <!--  Review Form -->
                 <form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewCtrl.addReview(product)">
 
                     <!--  Live Preview -->
                     <blockquote>
-                        <strong>{{reviewCtrl.review.stars}} Stars</strong> {{reviewCtrl.review.body}}
+                        {{reviewCtrl.review.body}}
+                        <strong class="pull-right">{{reviewCtrl.review.stars}} Stars</strong>
                         <cite class="clearfix">—{{reviewCtrl.review.author}}</cite>
                     </blockquote>
 
                     <!--  Review Form -->
-                    <h4>Submit a Review</h4>
+                    <h6>Submit a Review</h6>
                     <fieldset class="form-group">
                         <select ng-model="reviewCtrl.review.stars" class="form-control" ng-options="stars for stars in [5,4,3,2,1]" title="Stars">
                             <option value>Rate the Product</option>

@@ -36,8 +36,8 @@ angular
       .when('/contact', {
         templateUrl: 'app/views/construction.html'
       })
-      .when('/arthimatic', {
-        templateUrl: 'app/views/arthimatic.html'
+      .when('/trignometry', {
+        templateUrl: 'app/views/trignometry.html'
       })
       .when('/construction', {
         templateUrl: 'app/views/construction.html'
