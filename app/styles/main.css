@@ -158,6 +158,17 @@ blockquote em {
 /*4. Start course div*/
 .start-course {
     background-color: green;
+    border: 2px solid black;
     color: white;
     padding: 5px;
+    margin: 2px;
+}
+
+/*4. Start test div*/
+.start-test {
+    background-color: red;
+    border: 2px solid black;
+    color: white;
+    padding: 5px;
+    margin: 2px;
 }
