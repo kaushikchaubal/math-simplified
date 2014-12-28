@@ -1,6 +1,6 @@
 <div class="list-group" ng-controller="StoreController as store">
     <!--  Product Container  -->
-    <div class="list-group-item" ng-repeat="product in store.products">
+    <div class="list-group-item" ng-repeat="product in products">
         <h3>{{product.name}} ({{ product.level }}) 
           <em class="pull-right">
             <a ng-href="{{ product.url }}">Start Course</a>
