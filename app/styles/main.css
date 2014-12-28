@@ -154,3 +154,10 @@ blockquote em {
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
+/*4. Start course div*/
+.start-course {
+    background-color: green;
+    color: white;
+    padding: 5px;
+}
